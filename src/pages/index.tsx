@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/header/Header'
-import CarroselComponent from '../components/homepage/destaquesBanner/carrousel/Carrosel'
+import DestaqueBanner from '../components/homepage/destaquesBanner/Destaque'
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
-        <CarroselComponent />
+        <DestaqueBanner />
       </main>
     </div>
   )
