@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { FaBars} from 'react-icons/fa';
-import { AllCategorias, ItemCategoria, ItensCategoria, ItensNavContainer } from "./styles";
+import { AllCategorias, FonteCategorias, FontMarca, ItemCategoria, ItensCategoria, ItensNavContainer, MarcaEsquerda } from "./styles";
 
 export default function ItenNav(){
     return (
       <ItensNavContainer>
         <AllCategorias>
           <FaBars color="#fafafa" />
-          <ItensCategoria name="categories" id="categories">
-            <option value="All Categories" selected>
+          <ItensCategoria defaultValue={"DEFAULT"}>
+            <option value="DEFAULT" disabled>
               Categorias
             </option>
             <option value="#">Futebol Nacional</option>
@@ -18,22 +18,25 @@ export default function ItenNav(){
           </ItensCategoria>
         </AllCategorias>
         <ItemCategoria>
-          <Link href="#">
-            <a>Promoções</a>
+          <Link href="#" passHref>
+            <FonteCategorias>Promoções</FonteCategorias>
           </Link>
-          <Link href="#">
-            <a>Contato</a>
+          <Link href="#" passHref>
+            <FonteCategorias>Contato</FonteCategorias>
           </Link>
-          <Link href="#">
-            <a>Brasileirão</a>
+          <Link href="#" passHref>
+            <FonteCategorias>Brasileirão</FonteCategorias>
           </Link>
-          <Link href="#">
-            <a>Basquete</a>
+          <Link href="#" passHref>
+            <FonteCategorias>Basquete</FonteCategorias>
           </Link>
-          <Link href="#">
-            <a>Corta-Vento</a>
+          <Link href="#" passHref>
+            <FonteCategorias>Corta-Vento</FonteCategorias>
           </Link>
         </ItemCategoria>
+        <MarcaEsquerda>
+          <FontMarca>Jotinha Store</FontMarca>
+        </MarcaEsquerda>
       </ItensNavContainer>
     ); 
 }

@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Header from '../components/header/Header'
+import CarroselComponent from '../components/homepage/destaquesBanner/carrousel/Carrosel'
 
 const Home: NextPage = () => {
   return (
@@ -8,8 +9,9 @@ const Home: NextPage = () => {
       <Head>
         <title>Jotinha Store</title>
       </Head>
+      <Header />
       <main>
-        <Header />
+        <CarroselComponent />
       </main>
     </div>
   )

@@ -6,4 +6,5 @@ export const NavContainer = styled.nav`
     display: flex;
     flex-direction: row;
     background-color: #fafafa;
+    flex-direction: row;
 `
